@@ -1,5 +1,5 @@
 server:
-  port: 3355
+  port: 3366
 
 spring:
   application:
@@ -10,6 +10,7 @@ spring:
       name: config
       profile: dev
       uri: http://config-3344.com:3344
+
 eureka:
   client:
     service-url:
@@ -21,7 +22,6 @@ management:
       exposure:
         include: "*"
 
-#  curl -X POST "http://localhost:3355/actuator/refresh"
 rabbitmq:
   host: localhost
   port: 5672
